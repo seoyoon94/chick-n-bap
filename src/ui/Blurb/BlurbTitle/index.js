@@ -1,10 +1,12 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import '../blurb.css';
 
-const BlurbDescription = ({children}) => {
+const BlurbTitle = ({children}) => {
   return (
-    <h3 className='blurb__title'>{children}</h3>
+    <h2 className='c-blurb__title'>
+      {children}
+    </h2>
   );
 };
 
-export default BlurbDescription;
+export default BlurbTitle;

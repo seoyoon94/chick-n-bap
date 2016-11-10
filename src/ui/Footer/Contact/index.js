@@ -3,11 +3,11 @@ import '../footer.css';
 
 const Contact = ({tel, address, email}) => {
   return (
-    <div className="footer__contact">
+    <div className="c-footer__contact">
       <h3>Contact Us</h3>
-      { !!tel && <p>Phone: {tel}</p> }
-      { !!address && <p>Address: {address}</p> }
-      { !!email && <p>Email: {email}</p> }
+      { !!address && <p>{address}</p> }
+      { !!tel && <p>{tel}</p> }
+      { !!email && <p>{email}</p> }
     </div>
   );
 };

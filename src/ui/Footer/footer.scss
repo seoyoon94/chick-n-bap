@@ -1,12 +1,27 @@
+@import '../css/variables';
+
 footer {
   background: black;
-  color: white;
+  color: $color-white;
 }
 
-.footer {
+.c-footer {
+  padding: $spacing-vertical $spacing-horizontal;
+  text-align: center;
+
+  h3 {
+    color: $color-brand-primary;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  p {
+    margin: 0;
+  }
 
   &__wrapper {
-
+    margin-bottom: $spacing-vertical;
   }
 
   &__contact {

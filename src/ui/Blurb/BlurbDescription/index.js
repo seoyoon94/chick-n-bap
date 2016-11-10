@@ -1,9 +1,11 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import '../blurb.css';
 
 const BlurbDescription = ({children}) => {
   return (
-    <p className="blurb__description">{children}</p>
+    <p className="c-blurb__description">
+      {children}
+    </p>
   );
 };
 

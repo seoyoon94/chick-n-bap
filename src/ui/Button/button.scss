@@ -1,0 +1,20 @@
+@import "../css/variables";
+
+.c-button {
+  background: $color-brand-primary;
+  border: $border;
+  border-color: $color-brand-primary;
+  border-radius: $border-radius;
+  color: $color-white;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  letter-spacing: $button-letter-spacing;
+  line-height: $spacing-vertical-lg;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: $button-height $button-width;
+  position: relative;
+  margin: $spacing-vertical-lg auto;
+  max-width: 250px;
+}

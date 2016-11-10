@@ -1,18 +1,16 @@
 import React from 'react';
 
-import { Blurb, Hero, Footer } from '../../ui';
+import { Blurb, Hero } from '../../ui';
+import banner from '../../assets/images/banner.jpg';
+import blurbs from './blurbs';
 
 const Home = () => {
   return (
     <div>
-      <Hero />
-      <Blurb 
-        title="Menu"
-        description="Description"/>
-      <Blurb 
-        title="About Us"
-        description="Description"/>
-      <Footer />
+      <Hero 
+        imgSrc={banner}/>
+      <Blurb.BlurbsList
+        blurbs={blurbs} />
     </div>
   );
 };

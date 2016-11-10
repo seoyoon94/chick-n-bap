@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import './hero.css';
 
-const Hero = () => {
+const Hero = ({imgSrc}) => {
   return (
-    <div className='hero'></div>
+    <div 
+      className="hero" 
+      style={{backgroundImage: 'url(' + imgSrc + ')'}}/>
   );
+};
+
+Hero.propTypes = {
+  imgSrc: PropTypes.string
 };
 
 export default Hero;

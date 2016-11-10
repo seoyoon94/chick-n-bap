@@ -1,9 +1,11 @@
 import React from 'react';
-import { browserHistory, Router, Route } from 'react-router';
-import { Home } from './views';
+import { browserHistory, IndexRoute, Router, Route } from 'react-router';
+import { Home, Layout } from './views';
 
 export default (
   <Router history={browserHistory}>
-    <Route path='/' component={Home} />
+    <Route path='/' component={Layout}>
+      <IndexRoute component={Home} />
+    </Route> 
   </Router>
 );

@@ -1,10 +1,24 @@
-.blurb {
-  
-  &__title {
+@import '../css/variables';
 
+.l-blurbs-list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: $spacing-vertical $spacing-horizontal;
+}
+
+.c-blurb {
+  padding: $spacing-vertical $spacing-horizontal-sm;
+  flex: 0 1 100%;
+  position: relative;
+  text-align: center;
+
+  & + & {
+    border-top: $border;
   }
 
-  &__description {
-
+  &__title {
+    color: $color-brand-primary;
+    text-transform: uppercase;
+    letter-spacing: -1px;
   }
 }

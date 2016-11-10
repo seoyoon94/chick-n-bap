@@ -1,0 +1,71 @@
+// Colors
+// ========================================================
+//
+
+$color-brand-primary: #fc340c;
+
+$color-gray: #d1d1d1;
+$color-gray-light: #dedede;
+
+$color-white: #fff;
+
+
+
+
+// Borders
+// ========================================================
+//
+
+$border-color: $color-gray;
+$border-style: solid;
+
+$border-width: 2px;
+$border-width-lg: $border-width * 2;
+
+$border: $border-width $border-color $border-style;
+
+$border-radius: 3px;
+
+
+
+
+// Breakpoints
+// ========================================================
+//
+
+$bp: (
+);
+
+
+
+
+// Fonts
+// ========================================================
+//
+
+$font-family-heading: 'Open Sans', Arial, sans-serif;
+$font-family-paragraph: 'Lato', Arial, sans-serif;
+
+
+
+
+// Spacing
+// ========================================================
+//
+
+$spacing-horizontal: 1em;
+$spacing-horizontal-sm: $spacing-horizontal / 2;
+$spacing-horizontal-lg: $spacing-horizontal * 2;
+
+$spacing-vertical: 1em;
+$spacing-vertical-sm: $spacing-vertical / 2;
+$spacing-vertical-lg: $spacing-vertical * 2;
+
+
+// Buttons
+// ========================================================
+//
+
+$button-height: 1em;
+$button-width: 2em;
+$button-letter-spacing: 2px;
