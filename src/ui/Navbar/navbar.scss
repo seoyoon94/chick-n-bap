@@ -1,0 +1,21 @@
+@import '../css/variables';
+
+.c-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 1;
+  padding: $spacing-vertical $spacing-horizontal;
+
+  &__logo {
+    display: block;
+    background: url('../../assets/images/logo-sm.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.c-nav {
+  display: none;
+}

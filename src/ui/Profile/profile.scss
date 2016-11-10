@@ -1,0 +1,35 @@
+@import '../css/variables';
+
+.l-profile-list {
+  padding: $spacing-vertical-sm $spacing-horizontal;
+}
+
+.c-profile {
+  display: flex;
+  flex-flow: row wrap;
+  
+  &__avatar {
+    width: 100%;
+
+    @media screen and (min-width: 30em) {
+      width: 50%;
+    }
+  }
+
+  &__bio {
+    width: 100%;
+
+    @media screen and (min-width: 30em) {
+      width: 50%;
+    }
+  }
+
+  &__name {
+    color: $color-brand-primary;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+}

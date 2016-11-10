@@ -5,15 +5,3 @@
   top: 0;
 }
 
-.c-navbar {
-  display: flex;
-  justify-content: space-between;
-
-  &__logo {
-    display: block;
-    background: url('../../assets/images/logo-sm.png');
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-  }
-}

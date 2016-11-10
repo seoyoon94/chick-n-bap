@@ -1,0 +1,25 @@
+@import '../css/variables';
+
+.c-hamburger {
+  position: relative;
+
+  &__bar {
+    display: block;
+    position: absolute;
+    width: $hamburger-width;
+    height: $hamburger-thickness;
+    background: white;
+
+    &:first-child {
+      top: 4px;
+    }
+
+    &:nth-child(2) {
+      top: 12px;
+    }
+
+    &:last-child {
+      top: 20px;
+    }
+  }
+}
