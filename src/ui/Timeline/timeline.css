@@ -1,0 +1,27 @@
+.c-timeline {
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em; }
+  @media screen and (min-width: 45em) {
+    .c-timeline {
+      margin-bottom: 1em; } }
+  @media screen and (min-width: 60em) {
+    .c-timeline {
+      margin-bottom: 2em; } }
+  .c-timeline h2 {
+    color: #fc340c; }
+  .c-timeline__item {
+    border-left: #fd5e3e 2px solid;
+    position: relative;
+    padding: 1em 0.5em; }
+    .c-timeline__item:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #fc340c; }
+
+/*# sourceMappingURL=timeline.css.map */

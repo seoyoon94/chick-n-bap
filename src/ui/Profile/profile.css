@@ -1,0 +1,30 @@
+.l-profile-list {
+  padding: 0.5em 0.5em; }
+
+.c-profile {
+  display: flex;
+  flex-flow: row wrap; }
+  .c-profile__avatar-container {
+    max-width: 100%; }
+    @media screen and (min-width: 60em) {
+      .c-profile__avatar-container {
+        width: 50%; } }
+  .c-profile__avatar {
+    height: auto;
+    width: 100%; }
+  .c-profile__bio {
+    width: 100%;
+    padding: 0.5em 0.5em; }
+    @media screen and (min-width: 60em) {
+      .c-profile__bio {
+        width: 50%;
+        padding: 2em 2em; } }
+  .c-profile__name {
+    color: #fc340c; }
+  @media screen and (min-width: 60em) {
+    .c-profile:nth-child(2n) .c-profile__bio {
+      order: 1; }
+    .c-profile:nth-child(2n) .c-profile__avatar-container {
+      order: 2; } }
+
+/*# sourceMappingURL=profile.css.map */

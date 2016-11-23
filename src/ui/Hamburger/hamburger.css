@@ -1,0 +1,25 @@
+.c-hamburger {
+  position: relative;
+  width: 3em;
+  height: 3em; }
+  @media screen and (min-width: 45em) {
+    .c-hamburger {
+      display: none; } }
+  .c-hamburger__bar {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background: #fc340c;
+    left: 50%;
+    transform: translateX(-50%); }
+    .is-active .c-hamburger__bar {
+      background: #fff; }
+    .c-hamburger__bar:first-child {
+      top: 1em; }
+    .c-hamburger__bar:nth-child(2) {
+      top: 1.5em; }
+    .c-hamburger__bar:last-child {
+      top: 2em; }
+
+/*# sourceMappingURL=hamburger.css.map */

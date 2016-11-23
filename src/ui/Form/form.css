@@ -1,0 +1,65 @@
+.c-input__field {
+  position: relative;
+  margin: 0 1em 1em; }
+  @media screen and (min-width: 60em) {
+    .c-input__field {
+      margin: 0 2em 2em; } }
+  .c-input__field.is-active input {
+    border-bottom: 1px solid #fc340c; }
+    .c-input__field.is-active input + label {
+      font-size: 0.75em;
+      top: 0; }
+    .c-input__field.is-active input:focus + label {
+      color: #fc340c; }
+  .c-input__field input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 3em;
+    width: 100%;
+    border-bottom: 1px solid #b8b8b8;
+    transition: all 300ms ease-in-out; }
+    .c-input__field input:focus {
+      border-bottom: 1px solid #fc340c; }
+      .c-input__field input:focus + label {
+        font-size: 0.75em;
+        color: #fc340c;
+        top: 0; }
+  .c-input__field [type=textarea] {
+    overflow: scroll; }
+  .c-input__field label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease-in-out; }
+
+.c-form {
+  margin-bottom: 0.5em; }
+  @media screen and (min-width: 45em) {
+    .c-form {
+      margin-bottom: 1em; } }
+  @media screen and (min-width: 60em) {
+    .c-form {
+      margin-bottom: 2em; } }
+  .c-form__submit {
+    display: flex;
+    justify-content: space-around; }
+    @media screen and (min-width: 60em) {
+      .c-form__submit {
+        justify-content: flex-end;
+        padding-right: 2em; } }
+    .c-form__submit input[type=submit] {
+      cursor: pointer;
+      background-color: #fc340c;
+      padding: 1em 2em;
+      box-shadow: 0 3px 4px -1px rgba(0, 0, 0, 0.68);
+      color: #fff;
+      letter-spacing: 2px;
+      border-radius: 3px;
+      text-transform: uppercase; }
+      .c-form__submit input[type=submit]:active {
+        box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.25);
+        outline-style: none; }
+
+/*# sourceMappingURL=form.css.map */

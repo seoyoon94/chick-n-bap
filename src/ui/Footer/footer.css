@@ -1,0 +1,23 @@
+.c-footer {
+  background: black;
+  color: #fff;
+  padding: 0.5em 0.5em;
+  text-align: center; }
+  .c-footer h3 {
+    color: #fc340c;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .c-footer p {
+    margin: 0; }
+  @media screen and (min-width: 45em) {
+    .c-footer {
+      text-align: left;
+      padding: 1em 1em; }
+      .c-footer__contact {
+        text-align: right; } }
+  @media screen and (min-width: 60em) {
+    .c-footer {
+      padding: 2em 2em; } }
+
+/*# sourceMappingURL=footer.css.map */
