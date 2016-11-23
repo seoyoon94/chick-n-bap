@@ -3,10 +3,12 @@ import '../profile.css';
 
 const Avatar = ({src}) => {
   return (
-    <img 
-      className="c-profile__avatar"
-      src={src} 
-      alt="Profile" />
+    <div className="c-profile__avatar-container">
+      <img 
+        className="c-profile__avatar"
+        src={src} 
+        alt="Profile" />
+    </div>
   );
 };
 

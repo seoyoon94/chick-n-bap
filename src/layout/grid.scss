@@ -1,0 +1,44 @@
+@import '../ui/css/variables';
+
+.l-grid {
+  margin-left: auto;
+  margin-right: auto;
+
+  @each $breakpoint, $width in $bp {
+    @if $breakpoint != "xs" {
+      @media screen and (min-width: $width) {
+        max-width: $width;
+      }
+    }
+    @else {
+      max-width: $width;
+    }
+  }
+}
+
+.l-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+@each $breakpoint, $width in $bp {
+  @for $i from 1 through 12 {
+    $col-width: calc(100%/#{12/$i});
+
+    @if $breakpoint == "xs" {
+      .l-col-xs-#{$i} {
+        flex: 0 1 $col-width; 
+        max-width: $col-width;
+      }
+    }
+    @else {
+      @media screen and (min-width: map-get($bp, $breakpoint)) {
+        .l-col-#{$breakpoint}-#{$i} {
+          flex: 0 1 $col-width; 
+          max-width: $col-width;
+        }
+      }
+    }
+  }
+}

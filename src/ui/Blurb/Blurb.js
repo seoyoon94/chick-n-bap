@@ -6,7 +6,12 @@ import BlurbDescription from './BlurbDescription';
 import Icon from '../Icon';
 import Button from '../Button';
 
-const Blurb = ({button, description, icon, title}) => {
+const Blurb = ({
+  button, 
+  description, 
+  icon, 
+  title
+}) => {
   return (
     <section className='c-blurb'>
       <BlurbTitle>

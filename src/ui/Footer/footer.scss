@@ -1,12 +1,9 @@
 @import '../css/variables';
 
-footer {
+.c-footer {
   background: black;
   color: $color-white;
-}
-
-.c-footer {
-  padding: $spacing-vertical $spacing-horizontal;
+  padding: $spacing-vertical-sm $spacing-horizontal-sm;
   text-align: center;
 
   h3 {
@@ -20,15 +17,17 @@ footer {
     margin: 0;
   }
 
-  &__wrapper {
-    margin-bottom: $spacing-vertical;
+  @media screen and (min-width: map-get($bp, sm)) {
+    text-align: left;
+    padding: $spacing-vertical $spacing-horizontal;
+
+    &__contact {
+      text-align: right;
+    }
   }
 
-  &__contact {
-
+  @media screen and (min-width: map-get($bp, md)) {
+    padding: $spacing-vertical-lg $spacing-horizontal-lg;
   }
 
-  &__hours {
-
-  }
 }

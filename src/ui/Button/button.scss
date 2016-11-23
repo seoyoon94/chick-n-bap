@@ -5,6 +5,7 @@
   border: $border;
   border-color: $color-brand-primary;
   border-radius: $border-radius;
+  box-shadow: $box-shadow;
   color: $color-white;
   cursor: pointer;
   display: block;
@@ -15,6 +16,11 @@
   text-transform: uppercase;
   padding: $button-height $button-width;
   position: relative;
-  margin: $spacing-vertical-lg auto;
+  margin: 0 auto $spacing-vertical;
   max-width: 250px;
+
+  &:active {
+    box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.25);
+    outline-style: none;
+  }
 }

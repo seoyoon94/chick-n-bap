@@ -2,7 +2,7 @@
   {
     "title": "Menu",
     "description": "If you are looking for the best tasting dishes that Binghamton University has to offer, look no further! Check out our diverse menu that will definitely satisfy your appetite.",
-    "iconName": "restaurant_menu",
+    "icon": "restaurant_menu",
     "button": {
       "address": "menu",
       "description": "Menu"
@@ -12,7 +12,7 @@
   {
     "title": "Meet The Team",
     "description": "Want to know how it all started? Do you want to meet the team that makes this possible? Come check us out!",
-    "iconName": "group",
+    "icon": "group",
     "button": {
       "address": "about",
       "description": "About Us"
@@ -22,7 +22,7 @@
   {
     "title": "Ask Us Anything",
     "description": "Have any questions about our ingredients, suggestions for future food ideas, or compliments to give our members? Send us an email or check our our social media!",
-    "iconName": "question_answer",
+    "icon": "question_answer",
     "button": {
       "address": "contact",
       "description": "Contact Us"

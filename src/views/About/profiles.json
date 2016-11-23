@@ -2,14 +2,28 @@
   {
     "name": "Sung Peter Kim",
     "title": "CEO",
-    "bio": "Short description text about person.",
-    "imgSrc": ""
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut scelerisque leo, vel elementum metus. Duis placerat scelerisque maximus. Cras lectus diam, molestie quis neque vel, ornare imperdiet metus. Vestibulum eros nunc, vehicula vitae lectus ac, imperdiet porta orci. Sed congue, arcu fermentum ullamcorper feugiat, tortor nibh dapibus orci, in lobortis lorem quam ut neque. Morbi elit orci, feugiat eget.",
+    "imgSrc": "sung.jpg"
+  },
+
+  {
+    "name": "Christian Ko",
+    "title": "Manager",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut scelerisque leo, vel elementum metus. Duis placerat scelerisque maximus. Cras lectus diam, molestie quis neque vel, ornare imperdiet metus. Vestibulum eros nunc, vehicula vitae lectus ac, imperdiet porta orci. Sed congue, arcu fermentum ullamcorper feugiat, tortor nibh dapibus orci, in lobortis lorem quam ut neque. Morbi elit orci, feugiat eget.",
+    "imgSrc": "christian.jpg"
   },
   
   {
-    "name": "Seoyoon Park",
-    "title": "Web Developer",
-    "bio": "Short description text about person.",
-    "imgSrc": ""
+    "name": "Employee 1",
+    "title": "Title",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut scelerisque leo, vel elementum metus. Duis placerat scelerisque maximus. Cras lectus diam, molestie quis neque vel, ornare imperdiet metus. Vestibulum eros nunc, vehicula vitae lectus ac, imperdiet porta orci. Sed congue, arcu fermentum ullamcorper feugiat, tortor nibh dapibus orci, in lobortis lorem quam ut neque. Morbi elit orci, feugiat eget.",
+    "imgSrc": "example.jpg"
+  },
+
+  {
+    "name": "Employee 2",
+    "title": "Title",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut scelerisque leo, vel elementum metus. Duis placerat scelerisque maximus. Cras lectus diam, molestie quis neque vel, ornare imperdiet metus. Vestibulum eros nunc, vehicula vitae lectus ac, imperdiet porta orci. Sed congue, arcu fermentum ullamcorper feugiat, tortor nibh dapibus orci, in lobortis lorem quam ut neque. Morbi elit orci, feugiat eget.",
+    "imgSrc": "example.jpg"
   }
 ]

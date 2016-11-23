@@ -5,9 +5,10 @@ import Avatar from './Avatar';
 import Bio from './Bio';
 
 const Profile = ({bio, imgSrc, name, title}) => {
+  let img = require(`../../assets/images/${imgSrc}`);
   return (
     <div className="c-profile">
-      <Avatar src={imgSrc} />
+      <Avatar src={img} />
       <Bio 
         bio={bio}
         name={name}

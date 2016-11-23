@@ -7,13 +7,27 @@
 }
 
 .c-blurb {
-  padding: $spacing-vertical $spacing-horizontal-sm;
-  flex: 0 1 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 100%;
+  padding: $spacing-vertical-sm $spacing-horizontal-sm;
+  margin-bottom: $spacing-vertical-sm;
   position: relative;
   text-align: center;
 
-  & + & {
-    border-top: $border;
+  @media screen and (min-width: map-get($bp, md)) {
+    padding: $spacing-vertical $spacing-horizontal;
+    margin-bottom: $spacing-vertical;
+  }
+
+  @media screen and (min-width: map-get($bp, md)) {
+    padding: $spacing-vertical-lg $spacing-horizontal-lg;
+    margin-bottom: $spacing-vertical-lg;
+  }
+
+  &__description {
+    flex: 1;
   }
 
   &__title {
@@ -21,4 +35,5 @@
     text-transform: uppercase;
     letter-spacing: -1px;
   }
+
 }

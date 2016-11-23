@@ -2,24 +2,36 @@
 
 .c-hamburger {
   position: relative;
+  width: 3em;
+  height: 3em;
+
+  @media screen and (min-width: map-get($bp, sm)) {
+    display: none;
+  }
 
   &__bar {
     display: block;
     position: absolute;
     width: $hamburger-width;
     height: $hamburger-thickness;
-    background: white;
+    background: $color-brand-primary;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .is-active & {
+      background: $color-white;
+    }
 
     &:first-child {
-      top: 4px;
+      top: 1em;
     }
 
     &:nth-child(2) {
-      top: 12px;
+      top: 1.5em;
     }
 
     &:last-child {
-      top: 20px;
+      top: 2em;
     }
   }
 }

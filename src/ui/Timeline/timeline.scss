@@ -1,0 +1,36 @@
+@import '../css/variables';
+
+.c-timeline {
+  padding: $spacing-vertical-sm $spacing-horizontal;
+  margin-bottom: $spacing-vertical-sm;
+
+  @media screen and (min-width: map-get($bp, sm)) {
+    margin-bottom: $spacing-vertical;
+  }
+
+  @media screen and (min-width: map-get($bp, md)) {
+    margin-bottom: $spacing-vertical-lg;
+  }
+
+  h2 {
+    color: $color-brand-primary;
+  }
+
+  &__item {
+    border-left: $color-brand-primary-light $border-width $border-style;
+    position: relative;
+    padding: $spacing-vertical $spacing-horizontal-sm;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $color-brand-primary;
+    }
+  }
+}

@@ -1,7 +1,17 @@
+@import '../css/variables';
+
 .c-header {
   position: fixed;
+  background: rgba($color-brand-primary, 0.0);
+  z-index: 10;
   width: 100%;
   left: 0;
   top: 0;
+  transition: all 500ms ease-in-out;
+
+  &.is-active {
+    background: rgba($color-brand-primary, 1);
+    box-shadow: $box-shadow;
+  }
 }
 

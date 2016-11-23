@@ -1,6 +1,14 @@
+@import '../css/variables';
+
 .hero {
   height: 350px;
+  width: 100%;
   background-size: cover;
   background-color: lightgrey;
   background-position: center center;
+  box-shadow: $box-shadow;
+
+  @media screen and (min-width: map-get($bp, sm)) {
+    height: 600px;
+  }
 }

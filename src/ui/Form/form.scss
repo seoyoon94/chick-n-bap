@@ -1,0 +1,95 @@
+@import '../css/variables';
+
+.c-input__field {
+  position: relative;
+  margin: 0 $spacing-horizontal $spacing-vertical;
+
+  @media screen and (min-width: map-get($bp, md)) {
+    margin: 0 $spacing-horizontal-lg $spacing-vertical-lg;
+  }
+
+  &.is-active {
+    input {
+      border-bottom: $input-border-focus;
+
+      & + label {
+        font-size: $input-font-size-focus;
+        top: 0;
+      }
+
+      &:focus + label {
+        color: $color-brand-primary;
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: $input-height;
+    width: 100%;
+    border-bottom: $input-border-neutral;
+    transition: $transition;
+
+    &:focus {
+      border-bottom: $input-border-focus;
+
+      & + label {
+        font-size: $input-font-size-focus;
+        color: $color-brand-primary;
+        top: 0;
+      }
+    }
+  }
+
+  [type=textarea] {
+    overflow: scroll;
+  }
+
+  label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: $transition;
+  }
+}
+
+.c-form {
+  margin-bottom: $spacing-vertical-sm;
+
+  @media screen and (min-width: map-get($bp, sm)) {
+    margin-bottom: $spacing-vertical;
+  }
+
+  @media screen and (min-width: map-get($bp, md)) {
+    margin-bottom: $spacing-vertical-lg;
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: space-around;
+
+    @media screen and (min-width: map-get($bp, md)) {
+      justify-content: flex-end;
+      padding-right: $spacing-horizontal-lg;
+    }
+
+    input[type=submit] {
+      cursor: pointer;
+      background-color: $color-brand-primary;
+      padding: $button-height $button-width;
+      box-shadow: $box-shadow;
+      color: $color-white;
+      letter-spacing: $button-letter-spacing;
+      border-radius: $border-radius;
+      text-transform: uppercase;
+
+      &:active {
+        box-shadow: inset 0 0 6px 3px rgba(0, 0, 0, 0.25);
+        outline-style: none;
+      }
+    }
+  }
+}
